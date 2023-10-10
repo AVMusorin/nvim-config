@@ -66,3 +66,6 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Lazygit
 keymap("n", "<leader>gg", ":LazyGit<CR>", opts)
+
+-- Spell checking
+keymap("n", "<leader>ss", ":set spell!<CR>", opts)
