@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 telescope.load_extension('media_files')
+telescope.load_extension('fzf')
 
 local actions = require "telescope.actions"
 
@@ -12,7 +13,7 @@ telescope.setup {
 
     prompt_prefix = " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    path_display = { "absolute" },
 
     mappings = {
       i = {
@@ -79,22 +80,28 @@ telescope.setup {
       },
     },
   },
-  -- pickers = {
+  pickers = {
     -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
+    find_files = {
+      hidden = true,
+    }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-  -- },
+  },
   extensions = {
     media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
         filetypes = {"png", "webp", "jpg", "jpeg"},
         find_cmd = "rg" -- find command (defaults to `fd`)
-      }
+      },
+    fzf = {
+      fuzzy = true,                    -- false will only do exact matching
+      override_generic_sorter = true,  -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                       -- the default case_mode is "smart_case"
+    }
     -- Your extension configuration goes here:
     -- extension_name = {
     --   extension_config_key = value,
