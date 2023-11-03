@@ -75,3 +75,7 @@ keymap("n", "<leader>gg", ":LazyGit<CR>", opts)
 
 -- Spell checking
 keymap("n", "<leader>ss", ":set spell!<CR>", opts)
+
+-- DAP
+keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap("n", "<leader>C", "<Cmd>lua require'dap'.continue()<CR>", opts)
