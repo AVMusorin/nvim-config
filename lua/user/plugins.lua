@@ -74,7 +74,7 @@ return packer.startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
   use {
     'j-hui/fidget.nvim',
-    tag = 'legacy',
+    -- tag = 'legacy',
   } -- LSP loading progress. Helpful for big C++ projects.
 
   -- Telescope
