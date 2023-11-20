@@ -79,3 +79,4 @@ keymap("n", "<leader>ss", ":set spell!<CR>", opts)
 -- DAP
 keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
 keymap("n", "<leader>C", "<Cmd>lua require'dap'.continue()<CR>", opts)
+keymap("n", "<leader>dr", "<Cmd>lua require'dap'.repl.open()<CR>", opts)
