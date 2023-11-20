@@ -14,11 +14,20 @@ dap.adapters.lldb = {
   type = "executable",
 	command = "/usr/bin/lldb-vscode", -- adjust as needed
 	name = "lldb",
+  args = {}
 }
 
-dap.configurations.cpp = {
-  lldb
-}
+dap.adapters.codelldb = {
+    type = 'server',
+    port = "${port}",
+    executable = {
+      command = "codelldb", -- Installed with :MasonInstall
+      args = {"--port", "${port}"},
+    }
+  }
+
+dap.configurations.cpp = lldb
+dap.configurations.c = dap.configurations.cpp
 
 dap.listeners.after.event_initialized["dapui_config"] = function()
   dapui.open()
