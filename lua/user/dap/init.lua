@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+dap.set_log_level("TRACE")
 local lldb = require("user.dap.lldb")
 local dapui = require("dapui")
 
