@@ -4,6 +4,7 @@ local servers = {
   "jsonls",
   "clangd",
   "tsserver",
+  "jdtls"
 }
 
 local settings = {
