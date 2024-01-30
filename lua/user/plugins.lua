@@ -89,6 +89,10 @@ return packer.startup(function(use)
     'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
+  use {
+    "FabianWirth/search.nvim",
+    requires = {"nvim-telescope/telescope.nvim"}
+  }
 
   -- Treesitter
   use {

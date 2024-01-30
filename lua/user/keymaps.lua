@@ -56,7 +56,7 @@ keymap("v", "p", '"_dP', opts)
 
 keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
 keymap("n", "<leader>fg", "<cmd>lua require'telescope.builtin'.git_files()<CR>", opts)
-keymap("n", "<leader>fw", "<cmd>lua require'telescope.builtin'.live_grep()<CR>", opts)
+keymap("n", "<leader>fw", "<cmd>lua require'search'.open({ tab_name = 'Grep' })<CR>", opts)
 keymap("n", "<leader>fb", "<cmd>lua require'telescope.builtin'.buffers()<CR>", opts)
 keymap("n", "<leader>fh", "<cmd>lua require'telescope.builtin'.help_tags()<CR>", opts)
 
