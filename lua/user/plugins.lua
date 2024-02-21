@@ -56,6 +56,10 @@ return packer.startup(function(use)
     run = ':call doge#install()'
   }
 
+  -- replace
+  use "nvim-lua/plenary.nvim"
+  use "nvim-pack/nvim-spectre"
+
   -- Colorschema
   use "folke/tokyonight.nvim" -- Color scheme
 
