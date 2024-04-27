@@ -43,3 +43,5 @@ vim.opt.shortmess:append "c"
 
 vim.opt.spell = true                            -- spell check
 vim.opt.spelllang = "en_us"
+
+vim.opt.exrc = true
