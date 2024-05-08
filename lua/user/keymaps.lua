@@ -80,8 +80,3 @@ keymap("n", "<leader>ss", ":set spell!<CR>", opts)
 keymap("n", '<leader>S', '<cmd>lua require("spectre").open_file_search()<CR>', opts)
 keymap("n", '<leader>sw', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', opts)
 keymap("v", '<leader>sw', '<esc><cmd>lua require("spectre").open_file_search({select_word=true})<CR>', opts)
-
--- DAP
-keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
-keymap("n", "<leader>C", "<Cmd>lua require'dap'.continue()<CR>", opts)
-keymap("n", "<leader>dr", "<Cmd>lua require'dap'.repl.open()<CR>", opts)
