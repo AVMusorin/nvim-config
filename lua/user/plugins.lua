@@ -58,7 +58,6 @@ return packer.startup(function(use)
 
   -- replace
   use "nvim-lua/plenary.nvim"
-  use "nvim-pack/nvim-spectre"
 
   -- Colorschema
   use "folke/tokyonight.nvim" -- Color scheme
