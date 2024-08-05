@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "folke/which-key.nvim"
+  use 'ciaranm/detectindent'
   -- comments
   use {
     "kkoomen/vim-doge",

@@ -2,6 +2,7 @@
 -- Uses nvim-tree
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
+vim.g.detectindent_preferred_indent = 1
 vim.opt.listchars ={ trail = '󰹞' }
 vim.opt.list = true                             -- show trailing spaces
 vim.opt.backup = false                          -- creates a backup file
@@ -27,8 +28,9 @@ vim.opt.undofile = true                         -- enable persistent undo
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.expandtab = true                        -- convert tabs to spaces
-vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2                             -- insert 2 spaces for a tab
+vim.opt.shiftwidth = 4                          -- the number of spaces inserted for each indentation
+vim.opt.tabstop = 4                             -- insert 4 spaces for a tab
+vim.opt.softtabstop = 4                         -- number of spaces a <Tab> counts for while performing editing operations
 vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.number = true                           -- set numbered lines
 vim.opt.relativenumber = false                  -- set relative numbered lines
