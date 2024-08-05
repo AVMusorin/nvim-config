@@ -47,3 +47,10 @@ vim.opt.spell = true                            -- spell check
 vim.opt.spelllang = "en_us"
 
 vim.opt.exrc = true
+
+if vim.fn.exists(':DetectIndent') ~= 0 then
+  -- Autocommand to run DetectIndent on file read if the plugin is loaded
+  vim.cmd([[
+    autocmd BufReadPost * DetectIndent
+  ]])
+end
