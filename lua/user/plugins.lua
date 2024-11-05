@@ -51,12 +51,6 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "folke/which-key.nvim"
   use 'ciaranm/detectindent'
-  -- comments
-  use {
-    "kkoomen/vim-doge",
-    run = ':call doge#install()'
-  }
-
   -- replace
   use "nvim-lua/plenary.nvim"
 
