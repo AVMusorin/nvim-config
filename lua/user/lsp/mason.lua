@@ -3,7 +3,6 @@ local servers = {
   "pyright",
   "jsonls",
   "clangd",
-  "tsserver",
   "jdtls",
   "rust_analyzer",
   "gopls",
