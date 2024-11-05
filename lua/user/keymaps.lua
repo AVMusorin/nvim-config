@@ -38,7 +38,8 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- NOTE: important to return to any buffer manually, otherwise with several opened windows
 --       active window will be switched
-keymap("n", "<leader>c", ":bdelete<CR> <BAR> :bprevious<CR>", opts) -- close current buffer
+keymap("n", "<leader>bc", ":bdelete<CR> <BAR> :bprevious<CR>", opts) -- close current buffer
+keymap("n", "<leader>bp", ":b#<CR>", opts) -- toggle between the last two buffers
 
 -- Visual --
 -- Stay in indent mode
