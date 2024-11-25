@@ -84,6 +84,7 @@ telescope.setup {
     -- Default configuration for builtin pickers goes here:
     find_files = {
       hidden = true,
+      find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" }
     },
     oldfiles = {
       prompt_title = "Last 10 Files",
