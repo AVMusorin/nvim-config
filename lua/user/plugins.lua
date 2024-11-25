@@ -51,8 +51,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "folke/which-key.nvim"
   use 'ciaranm/detectindent'
-  -- replace
-  use "nvim-lua/plenary.nvim"
+  use "rafcamlet/nvim-luapad"
 
   -- Colorschema
   use "folke/tokyonight.nvim" -- Color scheme
