@@ -5,6 +5,7 @@ local servers = {
   "clangd",
   "jdtls",
   "rust_analyzer",
+  "bashls",
   "gopls",
 }
 
