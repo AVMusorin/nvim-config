@@ -7,6 +7,8 @@ local servers = {
   "rust_analyzer",
   "bashls",
   "gopls",
+  "dockerls",
+  "docker_compose_language_service",
 }
 
 local settings = {
