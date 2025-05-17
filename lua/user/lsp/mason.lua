@@ -4,7 +4,9 @@ local servers = {
   "jsonls",
   "clangd",
   "jdtls",
-  "rust_analyzer",
+  -- Prevent starting up a conflicting rust_analyzer
+  -- https://github.com/mrcjkb/rustaceanvim/discussions/94
+  -- "rust_analyzer",
   "bashls",
   "gopls",
   "dockerls",
